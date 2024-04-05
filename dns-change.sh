@@ -42,9 +42,6 @@ function Welcome(){
     if [ "$DNS2" != '' ]; then
         echo -e '备DNS: '$DNS2''
     fi
-    echo
-    echo -e '请按任意键继续，如有配置错误请使用 Ctrl+C 退出。'
-    char=`get_char`
 }
 function ChangeDNS(){
     if grep -Eqi "CentOS" /etc/issue || grep -Eq "CentOS" /etc/*-release; then
